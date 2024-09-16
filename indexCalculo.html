@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada Bergh</title>
+    <link rel="stylesheet" href="folhaDeEstilo.css">
+</head>
+<body>
+    <h1>Cálculos</h1>
+    
+    <form id="calcForm">
+        <p id="escolhaQualOperacao">
+            <label for="operacao">Escolha uma operação:</label>
+            <select id="inOperacao" name="operacao">
+                <option value="Multiplicação">Multiplicação</option>
+                <option value="Divisão">Divisão</option>
+                <option value="Soma">Soma</option>
+                <option value="Subtração">Subtração</option>
+            </select>
+        </p>
+        <p id="escolherNumeros">
+            Escolha os números para realizar a operação:
+            <input type="number" id="inNumberOne" required> 
+            <span id="valorDeOperacao">( '' )</span>
+            <input type="number" id="inNumberTwo" required>
+            <input type="submit" value="Obter Resultado" id="submit">
+        </p>
+        <h3 id="outResultado"></h3>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
